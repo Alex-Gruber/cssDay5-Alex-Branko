@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.start ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightblue;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.end {
+  background-color: aquamarine;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

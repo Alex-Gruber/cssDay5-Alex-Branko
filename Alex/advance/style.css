@@ -1,0 +1,70 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (40vh)[5];
+      grid-template-columns: repeat(5, 40vh);
+  -ms-grid-rows: (30vh)[4];
+      grid-template-rows: repeat(4, 30vh);
+}
+
+.box {
+  border: solid black;
+}
+
+.box1 {
+  background-color: darkblue;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box2 {
+  background-color: darkblue;
+}
+
+.box3 {
+  background-color: blueviolet;
+}
+
+.box4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(maroon), to(black));
+  background: linear-gradient(maroon, black);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+  .container {
+    -ms-grid-columns: (40vh)[2];
+        grid-template-columns: repeat(2, 40vh);
+    -ms-grid-rows: (40vh)[4];
+        grid-template-rows: repeat(4, 40vh);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 890px) {
+  body {
+    background-color: red;
+  }
+  .container {
+    -ms-grid-columns: (40vh)[3];
+        grid-template-columns: repeat(3, 40vh);
+    -ms-grid-rows: (40vh)[2];
+        grid-template-rows: repeat(2, 40vh);
+  }
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1000px) {
+  body {
+    background-color: aqua;
+  }
+  .container {
+    -ms-grid-columns: (40vh)[4];
+        grid-template-columns: repeat(4, 40vh);
+    -ms-grid-rows: (40vh)[4];
+        grid-template-rows: repeat(4, 40vh);
+  }
+}
+/*# sourceMappingURL=style.css.map */
